@@ -9,9 +9,9 @@
         "type": "local-userpass",
         "config": {
             "autoConfirm": true,
-            "resetPasswordUrl": "http://imvelodev.se/resetPassword",
+            "resetFunctionName": "resetFunc",
             "runConfirmationFunction": false,
-            "runResetFunction": false
+            "runResetFunction": true
         },
         "disabled": false
     }

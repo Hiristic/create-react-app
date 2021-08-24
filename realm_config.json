@@ -1,7 +1,8 @@
 {
-    "app_id": "application-0-rpley",
+    "app_id": "imvelo_realm_test-qozwh",
     "config_version": 20210101,
-    "name": "Application-0",
-    "location": "US-VA",
-    "deployment_model": "GLOBAL"
+    "name": "imvelo_realm_test",
+    "location": "DE-FF",
+    "deployment_model": "LOCAL",
+    "environment": "testing"
 }
