@@ -4,5 +4,5 @@
     "name": "imvelo_realm_test",
     "location": "DE-FF",
     "deployment_model": "LOCAL",
-    "environment": "testing"
+    "environment": "production"
 }
