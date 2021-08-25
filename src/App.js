@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import * as Realm from "realm-web";
 import React from 'react';
@@ -18,28 +18,29 @@ function UserDetail({ user }) {
 // Create a component that lets an anonymous user log in
       // Create an email/password credential
 function Login({ setUser }) {
-  const loginUser = async () => {
-    try {
-      const user = await app.logIn(credentials);
-      console.log("Successfully logged in!", user.id);
-      return user;
-    } catch (err) {
-      console.error("Failed to log in", err.message);
-    }
-  }
+ // const loginUser = async () => {
+ //   try {
+ //     const user = await app.logIn(credentials);
+ //     console.log("Successfully logged in!", user.id);
+      //return user;
+ //     return <button onClick={loginUser}>Log In</button>;
+ //   } catch (err) {
+ //     console.error("Failed to log in", err.message);
+ //   }
+ // }
   
   const loginAnonymous = async () => {
     const user = await app.logIn(Realm.Credentials.anonymous());
     setUser(user);
   };
-  //return <button onClick={loginAnonymous}>Log In</button>;
-  return <button onClick={loginUser}>Log In</button>;
+  return <button onClick={loginAnonymous}>Log In</button>;
+  
 }
 
-const credentials = Realm.Credentials.emailPassword(
-  "dado@dado.net",
-  "123456"
-);
+//const credentials = Realm.Credentials.emailPassword(
+//  "dado@dado.net",
+//  "123456"
+//);
 
 const App = () => {
   // Keep the logged in Realm user in local state. This lets the app re-render
