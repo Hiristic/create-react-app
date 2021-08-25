@@ -2,7 +2,6 @@
     "name": "mongodb-atlas",
     "type": "mongodb-atlas",
     "config": {
-        "clusterName": "imvelo",
         "readPreference": "primary",
         "wireProtocolEnabled": false
     },
