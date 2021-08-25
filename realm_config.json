@@ -3,6 +3,5 @@
     "config_version": 20210101,
     "name": "imvelo_realm_test",
     "location": "DE-FF",
-    "deployment_model": "LOCAL",
-    "environment": "production"
+    "deployment_model": "LOCAL"
 }
